@@ -1,3 +1,4 @@
+pragma solidity ^0.8.17;
 
 function randomUint8(uint8 number) internal view returns (uint8) {
     return uint8(uint8(blockhash(block.number - 1)) % number);
